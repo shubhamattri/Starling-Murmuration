@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classboidrules" kind="class" language="C++" prot="public">
+    <compoundname>boidrules</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classboidrules_1a0e9029abd27e4e202498f270819f6878" prot="public" static="no" mutable="no">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::location</definition>
+        <argsstring></argsstring>
+        <name>location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="13" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboidrules_1a23a05347f2694e15bd07165a60c1407d" prot="public" static="no" mutable="no">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::acceleration</definition>
+        <argsstring></argsstring>
+        <name>acceleration</name>
+        <briefdescription>
+<para>location vector of boid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="14" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" prot="public" static="no" mutable="no">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::velocity</definition>
+        <argsstring></argsstring>
+        <name>velocity</name>
+        <briefdescription>
+<para>acceleration vector of boid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="15" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double boidrules::speed_limit</definition>
+        <argsstring></argsstring>
+        <name>speed_limit</name>
+        <briefdescription>
+<para>velocity vector of boid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="16" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double boidrules::force_limit</definition>
+        <argsstring></argsstring>
+        <name>force_limit</name>
+        <briefdescription>
+<para>speed vector limit </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="17" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classboidrules_1ac8378b6011030e090f2678a2422d3174" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool boidrules::raptor</definition>
+        <argsstring></argsstring>
+        <name>raptor</name>
+        <briefdescription>
+<para>since force = mass * acceleration (i.e acceleration vector limit) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="18" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>boidrules::boidrules</definition>
+        <argsstring>()</argsstring>
+        <name>boidrules</name>
+        <briefdescription>
+<para>boidrules constructors </para>        </briefdescription>
+        <detaileddescription>
+<para>boolean value such that -&gt; Is the given boid a raptor or not? </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="20" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a3fc6820f3caaf98bfec67c496785ef7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boidrules::boidrules</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>boidrules</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>setting the physical parameters of a boid such as location , acceleration , velocity , speed_limit,force_limit </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="21" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="17" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1ae1c37124f0905e6ae29868a624bcf54b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>boidrules::boidrules</definition>
+        <argsstring>(double x, double y, bool inspect_raptor)</argsstring>
+        <name>boidrules</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>inspect_raptor</declname>
+        </param>
+        <briefdescription>
+<para>trigger for enabling and disabling the raptor presence in the simulation </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="22" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="24" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1adeeb0bcb15cc3461fc521ce416d3266e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boidrules::wrapup_boids</definition>
+        <argsstring>()</argsstring>
+        <name>wrapup_boids</name>
+        <briefdescription>
+<para>Functions which are used further for three boid rules and dispaying the boids on pc. </para>        </briefdescription>
+        <detaileddescription>
+<para>two preserve the number of boids on the screen and creating a environment to move the flock by wrapping around the boundaries of screen </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="25" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a6d350244d405926d30cd36e3f1faa85d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boidrules::modify</definition>
+        <argsstring>()</argsstring>
+        <name>modify</name>
+        <briefdescription>
+<para>wrap up the boids around the window of desktop </para>        </briefdescription>
+        <detaileddescription>
+<para>to force the values of physical parameters required for the boids and modify them accordingly to execute flocking </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="26" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a8c50a648361809de6a75a94c76f0bea9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double boidrules::boidvelocity_angle</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>boidvelocity_angle</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>to calculate angle of velocity of boid for generating the motion of boids as per the boids rotation here angle is calculated using dot product rule </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="27" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="48" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a58d1b50a478847d0a295e298fa2d7b32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boidrules::applyrules_flock</definition>
+        <argsstring>(vector&lt; boidrules &gt; vec)</argsstring>
+        <name>applyrules_flock</name>
+        <param>
+          <type>vector&lt; <ref refid="classboidrules" kindref="compound">boidrules</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>applying three folcking rules to the boids and setting their physical parameters </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="28" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="53" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a8184f1f98ababa77fd2976c58f9278a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boidrules::execute_flocking</definition>
+        <argsstring>(vector&lt; boidrules &gt; vec)</argsstring>
+        <name>execute_flocking</name>
+        <param>
+          <type>vector&lt; <ref refid="classboidrules" kindref="compound">boidrules</ref> &gt;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>to display the actual boids set executing flocking applying all the rules , parameters updation and wrapping </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="29" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1af85434ba6abc026215ac7e8d5ff586e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::Cohesion</definition>
+        <argsstring>(vector&lt; boidrules &gt; boids)</argsstring>
+        <name>Cohesion</name>
+        <param>
+          <type>vector&lt; <ref refid="classboidrules" kindref="compound">boidrules</ref> &gt;</type>
+          <declname>boids</declname>
+        </param>
+        <briefdescription>
+<para>steer towards average position of neighbours </para>        </briefdescription>
+        <detaileddescription>
+<para>Three rules of boids which are followed by them Each rule is required set of boids as input </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="34" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="62" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a8d6420dcc0f0c98cd8fc8400947c54ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::Seperation</definition>
+        <argsstring>(vector&lt; boidrules &gt; boids)</argsstring>
+        <name>Seperation</name>
+        <param>
+          <type>vector&lt; <ref refid="classboidrules" kindref="compound">boidrules</ref> &gt;</type>
+          <declname>boids</declname>
+        </param>
+        <briefdescription>
+<para>Avoid crowding of neighbours. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="35" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="79" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a923af948aad8d8679eddfcc461760e6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::Alignment</definition>
+        <argsstring>(vector&lt; boidrules &gt; boids)</argsstring>
+        <name>Alignment</name>
+        <param>
+          <type>vector&lt; <ref refid="classboidrules" kindref="compound">boidrules</ref> &gt;</type>
+          <declname>boids</declname>
+        </param>
+        <briefdescription>
+<para>steer towards average heading of neighbours </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>0 &lt; d &lt; 50 </para>        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="36" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="125" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a9a72560c1d316a5e2191fd2a1d258499" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc boidrules::steer</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>steer</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>makes advancement of boid by getting the desired velocity,acceleration,force limit of steering force </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="38" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="152" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void boidrules::accelerate_boid</definition>
+        <argsstring>(vectorfunc force)</argsstring>
+        <name>accelerate_boid</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>force</declname>
+        </param>
+        <briefdescription>
+<para>increases the acceleration of boid </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="39" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="164" bodyend="164"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>boidrules</label>
+        <link refid="classboidrules"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>acceleration</edgelabel>
+          <edgelabel>location</edgelabel>
+          <edgelabel>velocity</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>vectorfunc</label>
+        <link refid="classvectorfunc"/>
+      </node>
+    </collaborationgraph>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" line="11" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h" bodystart="10" bodyend="41"/>
+    <listofallmembers>
+      <member refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" prot="public" virt="non-virtual"><scope>boidrules</scope><name>accelerate_boid</name></member>
+      <member refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" prot="public" virt="non-virtual"><scope>boidrules</scope><name>acceleration</name></member>
+      <member refid="classboidrules_1a923af948aad8d8679eddfcc461760e6e" prot="public" virt="non-virtual"><scope>boidrules</scope><name>Alignment</name></member>
+      <member refid="classboidrules_1a58d1b50a478847d0a295e298fa2d7b32" prot="public" virt="non-virtual"><scope>boidrules</scope><name>applyrules_flock</name></member>
+      <member refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" prot="public" virt="non-virtual"><scope>boidrules</scope><name>boidrules</name></member>
+      <member refid="classboidrules_1a3fc6820f3caaf98bfec67c496785ef7d" prot="public" virt="non-virtual"><scope>boidrules</scope><name>boidrules</name></member>
+      <member refid="classboidrules_1ae1c37124f0905e6ae29868a624bcf54b" prot="public" virt="non-virtual"><scope>boidrules</scope><name>boidrules</name></member>
+      <member refid="classboidrules_1a8c50a648361809de6a75a94c76f0bea9" prot="public" virt="non-virtual"><scope>boidrules</scope><name>boidvelocity_angle</name></member>
+      <member refid="classboidrules_1af85434ba6abc026215ac7e8d5ff586e4" prot="public" virt="non-virtual"><scope>boidrules</scope><name>Cohesion</name></member>
+      <member refid="classboidrules_1a8184f1f98ababa77fd2976c58f9278a0" prot="public" virt="non-virtual"><scope>boidrules</scope><name>execute_flocking</name></member>
+      <member refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" prot="public" virt="non-virtual"><scope>boidrules</scope><name>force_limit</name></member>
+      <member refid="classboidrules_1a0e9029abd27e4e202498f270819f6878" prot="public" virt="non-virtual"><scope>boidrules</scope><name>location</name></member>
+      <member refid="classboidrules_1a6d350244d405926d30cd36e3f1faa85d" prot="public" virt="non-virtual"><scope>boidrules</scope><name>modify</name></member>
+      <member refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" prot="public" virt="non-virtual"><scope>boidrules</scope><name>raptor</name></member>
+      <member refid="classboidrules_1a8d6420dcc0f0c98cd8fc8400947c54ed" prot="public" virt="non-virtual"><scope>boidrules</scope><name>Seperation</name></member>
+      <member refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" prot="public" virt="non-virtual"><scope>boidrules</scope><name>speed_limit</name></member>
+      <member refid="classboidrules_1a9a72560c1d316a5e2191fd2a1d258499" prot="public" virt="non-virtual"><scope>boidrules</scope><name>steer</name></member>
+      <member refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" prot="public" virt="non-virtual"><scope>boidrules</scope><name>velocity</name></member>
+      <member refid="classboidrules_1adeeb0bcb15cc3461fc521ce416d3266e" prot="public" virt="non-virtual"><scope>boidrules</scope><name>wrapup_boids</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="dir_4d9a63b1a78fb28252eb76a916ea093a" kind="dir">
+    <compoundname>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project</compoundname>
+    <innerfile refid="boidrules_8cpp">boidrules.cpp</innerfile>
+    <innerfile refid="boidrules_8h">boidrules.h</innerfile>
+    <innerfile refid="flockofboids_8cpp">flockofboids.cpp</innerfile>
+    <innerfile refid="flockofboids_8h">flockofboids.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="_simulation_8cpp">Simulation.cpp</innerfile>
+    <innerfile refid="_simulation_8h">Simulation.h</innerfile>
+    <innerfile refid="vectorfunc_8cpp">vectorfunc.cpp</innerfile>
+    <innerfile refid="vectorfunc_8h">vectorfunc.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="flockofboids_8h" kind="file" language="C++">
+    <compoundname>flockofboids.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">vector</includes>
+    <includes refid="boidrules_8h" local="yes">boidrules.h</includes>
+    <includedby refid="flockofboids_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.cpp</includedby>
+    <includedby refid="_simulation_8h" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h</includedby>
+    <includedby refid="_simulation_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp</includedby>
+    <incdepgraph>
+      <node id="27">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h</label>
+        <link refid="flockofboids_8h"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>stdlib.h</label>
+      </node>
+      <node id="29">
+        <label>vector</label>
+      </node>
+      <node id="30">
+        <label>boidrules.h</label>
+        <link refid="boidrules_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>vectorfunc.h</label>
+        <link refid="vectorfunc_8h_source"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>math.h</label>
+      </node>
+      <node id="28">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="34">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h</label>
+        <link refid="flockofboids_8h"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h</label>
+        <link refid="_simulation_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classflockofboids" prot="public">flockofboids</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;boidrules.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FLOCKOFBOIDS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FLOCKOFBOIDS_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="classflockofboids" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classflockofboids" kindref="compound">flockofboids</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;boidrules&gt;<sp/>fob;</highlight></codeline>
+<codeline lineno="13" refid="classflockofboids_1afd6708805d7ac82fcbb1b1d6cdbeed42" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classflockofboids_1afd6708805d7ac82fcbb1b1d6cdbeed42" kindref="member">flockofboids</ref>(){}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classboidrules" kindref="compound">boidrules</ref><sp/>boid_in_flock(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>bif);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classflockofboids_1af360950e8d143fcec524ff8efda4f5ce" kindref="member">adjoin_boid</ref>(<ref refid="classboidrules" kindref="compound">boidrules</ref><sp/>b);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//void<sp/>remove_boid(boidrules<sp/>b);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classflockofboids_1a1c96e1f0069452958ec58d311b1b6235" kindref="member">recursive_flocking</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classflockofboids_1a3bc6c0b7701dedad45c7b33071f642dd" kindref="member">flocksize</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h"/>
+  </compounddef>
+</doxygen>

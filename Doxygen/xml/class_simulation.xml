@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="class_simulation" kind="class" language="C++" prot="public">
+    <compoundname>Simulation</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_simulation_1a10b33ceb8cb372ab6a1a6d9a11414e58" prot="private" static="no" mutable="no">
+        <type>sf::RenderWindow</type>
+        <definition>sf::RenderWindow Simulation::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="13" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a065ff83a28556bdb53e7bd372d5fbc71" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Simulation::window_width</definition>
+        <argsstring></argsstring>
+        <name>window_width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="14" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a6d070746d01f47174f1625aebaf788c6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Simulation::window_height</definition>
+        <argsstring></argsstring>
+        <name>window_height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="15" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a2c6e0e54f28cd36692d76d688bd1b3e1" prot="private" static="no" mutable="no">
+        <type>sf::Texture</type>
+        <definition>sf::Texture Simulation::pTexture</definition>
+        <argsstring></argsstring>
+        <name>pTexture</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="16" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a9ca5b7df8749de73d2eb316730c8a54e" prot="private" static="no" mutable="no">
+        <type>sf::Sprite</type>
+        <definition>sf::Sprite Simulation::pImage</definition>
+        <argsstring></argsstring>
+        <name>pImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="17" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a12e78ed2ee20c7b0f9036b9ee8df4f72" prot="private" static="no" mutable="no">
+        <type><ref refid="classflockofboids" kindref="compound">flockofboids</ref></type>
+        <definition>flockofboids Simulation::flock</definition>
+        <argsstring></argsstring>
+        <name>flock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="19" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a6a1f37cdde22e73ae4844dd0e4b11e71" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Simulation::sizeofboids</definition>
+        <argsstring></argsstring>
+        <name>sizeofboids</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="20" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_simulation_1a5ce9957514c0d42b9d528eb317f8fc34" prot="private" static="no" mutable="no">
+        <type>vector&lt; sf::CircleShape &gt;</type>
+        <definition>vector&lt;sf::CircleShape&gt; Simulation::shapes</definition>
+        <argsstring></argsstring>
+        <name>shapes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="21" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_simulation_1afa02d69e0c0390ad10bdfadae6d8c1e3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulation::Render</definition>
+        <argsstring>()</argsstring>
+        <name>Render</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Draws all of the Boids out, and applies functions that are needed to update.</para><para>location match</para><para>velocity direction angle</para><para>wrapping right boundary <linebreak/>
+<linebreak/>
+<linebreak/>
+ wrapping bottom boundary</para><para>wrapping left boundary</para><para>wrapping top boundary </para>        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="23" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp" bodystart="85" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simulation_1ad46a8fa548af6ec0193a31efab973e78" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulation::ManageInput</definition>
+        <argsstring>()</argsstring>
+        <name>ManageInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>mouse coordinates as location</para><para>visual parameters</para><para>Adds and shape to vector </para>        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="25" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp" bodystart="44" bodyend="83"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_simulation_1a5b224cc5b36bcc8eb29689aff223de41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Simulation::Simulation</definition>
+        <argsstring>()</argsstring>
+        <name>Simulation</name>
+        <briefdescription>
+<para>SFML window. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="28" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp" bodystart="12" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="class_simulation_1af0ad94212fd0a5af2f3f0b3a9be1b3a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Simulation::Run</definition>
+        <argsstring>()</argsstring>
+        <name>Run</name>
+        <briefdescription>
+<para>Run the starling simulation. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Starts all boids from the center of the screen</para><para>starts all shapes from the center of screen.</para><para>Add boid shapes to the vector </para>        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="29" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp" bodystart="18" bodyend="42"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" line="11" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h" bodystart="11" bodyend="30"/>
+    <listofallmembers>
+      <member refid="class_simulation_1a12e78ed2ee20c7b0f9036b9ee8df4f72" prot="private" virt="non-virtual"><scope>Simulation</scope><name>flock</name></member>
+      <member refid="class_simulation_1ad46a8fa548af6ec0193a31efab973e78" prot="private" virt="non-virtual"><scope>Simulation</scope><name>ManageInput</name></member>
+      <member refid="class_simulation_1a9ca5b7df8749de73d2eb316730c8a54e" prot="private" virt="non-virtual"><scope>Simulation</scope><name>pImage</name></member>
+      <member refid="class_simulation_1a2c6e0e54f28cd36692d76d688bd1b3e1" prot="private" virt="non-virtual"><scope>Simulation</scope><name>pTexture</name></member>
+      <member refid="class_simulation_1afa02d69e0c0390ad10bdfadae6d8c1e3" prot="private" virt="non-virtual"><scope>Simulation</scope><name>Render</name></member>
+      <member refid="class_simulation_1af0ad94212fd0a5af2f3f0b3a9be1b3a7" prot="public" virt="non-virtual"><scope>Simulation</scope><name>Run</name></member>
+      <member refid="class_simulation_1a5ce9957514c0d42b9d528eb317f8fc34" prot="private" virt="non-virtual"><scope>Simulation</scope><name>shapes</name></member>
+      <member refid="class_simulation_1a5b224cc5b36bcc8eb29689aff223de41" prot="public" virt="non-virtual"><scope>Simulation</scope><name>Simulation</name></member>
+      <member refid="class_simulation_1a6a1f37cdde22e73ae4844dd0e4b11e71" prot="private" virt="non-virtual"><scope>Simulation</scope><name>sizeofboids</name></member>
+      <member refid="class_simulation_1a10b33ceb8cb372ab6a1a6d9a11414e58" prot="private" virt="non-virtual"><scope>Simulation</scope><name>window</name></member>
+      <member refid="class_simulation_1a6d070746d01f47174f1625aebaf788c6" prot="private" virt="non-virtual"><scope>Simulation</scope><name>window_height</name></member>
+      <member refid="class_simulation_1a065ff83a28556bdb53e7bd372d5fbc71" prot="private" virt="non-virtual"><scope>Simulation</scope><name>window_width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

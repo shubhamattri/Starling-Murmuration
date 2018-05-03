@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="vectorfunc_8h" kind="file" language="C++">
+    <compoundname>vectorfunc.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">math.h</includes>
+    <includedby refid="boidrules_8h" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h</includedby>
+    <includedby refid="_simulation_8h" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h</includedby>
+    <includedby refid="_simulation_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp</includedby>
+    <includedby refid="vectorfunc_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp</includedby>
+    <incdepgraph>
+      <node id="78">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h</label>
+        <link refid="vectorfunc_8h"/>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>math.h</label>
+      </node>
+      <node id="79">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="83">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h</label>
+        <link refid="flockofboids_8h_source"/>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h</label>
+        <link refid="boidrules_8h_source"/>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h</label>
+        <link refid="_simulation_8h_source"/>
+      </node>
+      <node id="81">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h</label>
+        <link refid="vectorfunc_8h"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classvectorfunc" prot="public">vectorfunc</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal"><ref refid="namespacestd" kindref="compound">std</ref>;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>VECTORFUNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VECTORFUNC_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classvectorfunc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x;<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classvectorfunc_1a796cc09e267289f8dcf555d8a35c9264" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc_1a796cc09e267289f8dcf555d8a35c9264" kindref="member">vectorfunc</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/>=<sp/>a;<sp/>y<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_xy(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>normalize_vec();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>set_magnitude(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mag);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>max_limit(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>M);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>replicate_vec(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vector_addition(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scalar_addition(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vector_sub(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scalar_sub(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>two_vec_sub(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec,<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec1);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vector_multiplication(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scalar_multiplication(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vector_division(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scalar_division(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>magnitude();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>distance_betn_vec(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dot_prod(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>angle_betn_vec(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h"/>
+  </compounddef>
+</doxygen>

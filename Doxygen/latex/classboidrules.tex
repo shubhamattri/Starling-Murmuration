@@ -1,0 +1,127 @@
+\hypertarget{classboidrules}{}\section{boidrules Class Reference}
+\label{classboidrules}\index{boidrules@{boidrules}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classboidrules_a0fa44ded12febb8a903073fad1205e5b}{boidrules}} ()
+\begin{DoxyCompactList}\small\item\em boidrules constructors \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a3fc6820f3caaf98bfec67c496785ef7d}\label{classboidrules_a3fc6820f3caaf98bfec67c496785ef7d}} 
+\mbox{\hyperlink{classboidrules_a3fc6820f3caaf98bfec67c496785ef7d}{boidrules}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em setting the physical parameters of a boid such as location , acceleration , velocity , speed\+\_\+limit,force\+\_\+limit \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_ae1c37124f0905e6ae29868a624bcf54b}\label{classboidrules_ae1c37124f0905e6ae29868a624bcf54b}} 
+\mbox{\hyperlink{classboidrules_ae1c37124f0905e6ae29868a624bcf54b}{boidrules}} (double x, double y, bool inspect\+\_\+raptor)
+\begin{DoxyCompactList}\small\item\em trigger for enabling and disabling the raptor presence in the simulation \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classboidrules_adeeb0bcb15cc3461fc521ce416d3266e}{wrapup\+\_\+boids}} ()
+\begin{DoxyCompactList}\small\item\em Functions which are used further for three boid rules and dispaying the boids on pc. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classboidrules_a6d350244d405926d30cd36e3f1faa85d}{modify}} ()
+\begin{DoxyCompactList}\small\item\em wrap up the boids around the window of desktop \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classboidrules_a8c50a648361809de6a75a94c76f0bea9}{boidvelocity\+\_\+angle}} (\mbox{\hyperlink{classvectorfunc}{vectorfunc}} vec)
+\item 
+\mbox{\Hypertarget{classboidrules_a58d1b50a478847d0a295e298fa2d7b32}\label{classboidrules_a58d1b50a478847d0a295e298fa2d7b32}} 
+void \mbox{\hyperlink{classboidrules_a58d1b50a478847d0a295e298fa2d7b32}{applyrules\+\_\+flock}} (vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$ vec)
+\begin{DoxyCompactList}\small\item\em applying three folcking rules to the boids and setting their physical parameters \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a8184f1f98ababa77fd2976c58f9278a0}\label{classboidrules_a8184f1f98ababa77fd2976c58f9278a0}} 
+void \mbox{\hyperlink{classboidrules_a8184f1f98ababa77fd2976c58f9278a0}{execute\+\_\+flocking}} (vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$ vec)
+\begin{DoxyCompactList}\small\item\em to display the actual boids set executing flocking applying all the rules , parameters updation and wrapping \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} \mbox{\hyperlink{classboidrules_af85434ba6abc026215ac7e8d5ff586e4}{Cohesion}} (vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$ boids)
+\begin{DoxyCompactList}\small\item\em steer towards average position of neighbours \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a8d6420dcc0f0c98cd8fc8400947c54ed}\label{classboidrules_a8d6420dcc0f0c98cd8fc8400947c54ed}} 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} \mbox{\hyperlink{classboidrules_a8d6420dcc0f0c98cd8fc8400947c54ed}{Seperation}} (vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$ boids)
+\begin{DoxyCompactList}\small\item\em Avoid crowding of neighbours. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} \mbox{\hyperlink{classboidrules_a923af948aad8d8679eddfcc461760e6e}{Alignment}} (vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$ boids)
+\begin{DoxyCompactList}\small\item\em steer towards average heading of neighbours \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a9a72560c1d316a5e2191fd2a1d258499}\label{classboidrules_a9a72560c1d316a5e2191fd2a1d258499}} 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} \mbox{\hyperlink{classboidrules_a9a72560c1d316a5e2191fd2a1d258499}{steer}} (\mbox{\hyperlink{classvectorfunc}{vectorfunc}} vec)
+\begin{DoxyCompactList}\small\item\em makes advancement of boid by getting the desired velocity,acceleration,force limit of steering force \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a638a0fb28463f690dfc1e634ec1d8b01}\label{classboidrules_a638a0fb28463f690dfc1e634ec1d8b01}} 
+void \mbox{\hyperlink{classboidrules_a638a0fb28463f690dfc1e634ec1d8b01}{accelerate\+\_\+boid}} (\mbox{\hyperlink{classvectorfunc}{vectorfunc}} force)
+\begin{DoxyCompactList}\small\item\em increases the acceleration of boid \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classboidrules_a0e9029abd27e4e202498f270819f6878}\label{classboidrules_a0e9029abd27e4e202498f270819f6878}} 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} {\bfseries location}
+\item 
+\mbox{\Hypertarget{classboidrules_a23a05347f2694e15bd07165a60c1407d}\label{classboidrules_a23a05347f2694e15bd07165a60c1407d}} 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} \mbox{\hyperlink{classboidrules_a23a05347f2694e15bd07165a60c1407d}{acceleration}}
+\begin{DoxyCompactList}\small\item\em location vector of boid \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a32bf5e76cc15e8c16c6a4b25aec532aa}\label{classboidrules_a32bf5e76cc15e8c16c6a4b25aec532aa}} 
+\mbox{\hyperlink{classvectorfunc}{vectorfunc}} \mbox{\hyperlink{classboidrules_a32bf5e76cc15e8c16c6a4b25aec532aa}{velocity}}
+\begin{DoxyCompactList}\small\item\em acceleration vector of boid \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_a1fb1fcf0028472dbbfc1fc0201be0f50}\label{classboidrules_a1fb1fcf0028472dbbfc1fc0201be0f50}} 
+double \mbox{\hyperlink{classboidrules_a1fb1fcf0028472dbbfc1fc0201be0f50}{speed\+\_\+limit}}
+\begin{DoxyCompactList}\small\item\em velocity vector of boid \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_ae7ec6073d339c52d9cea8fec2bada84a}\label{classboidrules_ae7ec6073d339c52d9cea8fec2bada84a}} 
+double \mbox{\hyperlink{classboidrules_ae7ec6073d339c52d9cea8fec2bada84a}{force\+\_\+limit}}
+\begin{DoxyCompactList}\small\item\em speed vector limit \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classboidrules_ac8378b6011030e090f2678a2422d3174}\label{classboidrules_ac8378b6011030e090f2678a2422d3174}} 
+bool \mbox{\hyperlink{classboidrules_ac8378b6011030e090f2678a2422d3174}{raptor}}
+\begin{DoxyCompactList}\small\item\em since force = mass $\ast$ acceleration (i.\+e acceleration vector limit) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classboidrules_a0fa44ded12febb8a903073fad1205e5b}\label{classboidrules_a0fa44ded12febb8a903073fad1205e5b}} 
+\index{boidrules@{boidrules}!boidrules@{boidrules}}
+\index{boidrules@{boidrules}!boidrules@{boidrules}}
+\subsubsection{\texorpdfstring{boidrules()}{boidrules()}}
+{\footnotesize\ttfamily boidrules\+::boidrules (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+boidrules constructors 
+
+boolean value such that -\/$>$ Is the given boid a raptor or not? 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classboidrules_a923af948aad8d8679eddfcc461760e6e}\label{classboidrules_a923af948aad8d8679eddfcc461760e6e}} 
+\index{boidrules@{boidrules}!Alignment@{Alignment}}
+\index{Alignment@{Alignment}!boidrules@{boidrules}}
+\subsubsection{\texorpdfstring{Alignment()}{Alignment()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvectorfunc}{vectorfunc}} boidrules\+::\+Alignment (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$}]{boids }\end{DoxyParamCaption})}
+
+
+
+steer towards average heading of neighbours 
+
+0 $<$ d $<$ 50 \mbox{\Hypertarget{classboidrules_a8c50a648361809de6a75a94c76f0bea9}\label{classboidrules_a8c50a648361809de6a75a94c76f0bea9}} 
+\index{boidrules@{boidrules}!boidvelocity\+\_\+angle@{boidvelocity\+\_\+angle}}
+\index{boidvelocity\+\_\+angle@{boidvelocity\+\_\+angle}!boidrules@{boidrules}}
+\subsubsection{\texorpdfstring{boidvelocity\+\_\+angle()}{boidvelocity\_angle()}}
+{\footnotesize\ttfamily double boidrules\+::boidvelocity\+\_\+angle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvectorfunc}{vectorfunc}}}]{vec }\end{DoxyParamCaption})}
+
+to calculate angle of velocity of boid for generating the motion of boids as per the boids rotation here angle is calculated using dot product rule \mbox{\Hypertarget{classboidrules_af85434ba6abc026215ac7e8d5ff586e4}\label{classboidrules_af85434ba6abc026215ac7e8d5ff586e4}} 
+\index{boidrules@{boidrules}!Cohesion@{Cohesion}}
+\index{Cohesion@{Cohesion}!boidrules@{boidrules}}
+\subsubsection{\texorpdfstring{Cohesion()}{Cohesion()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvectorfunc}{vectorfunc}} boidrules\+::\+Cohesion (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classboidrules}{boidrules}} $>$}]{boids }\end{DoxyParamCaption})}
+
+
+
+steer towards average position of neighbours 
+
+Three rules of boids which are followed by them Each rule is required set of boids as input \mbox{\Hypertarget{classboidrules_a6d350244d405926d30cd36e3f1faa85d}\label{classboidrules_a6d350244d405926d30cd36e3f1faa85d}} 
+\index{boidrules@{boidrules}!modify@{modify}}
+\index{modify@{modify}!boidrules@{boidrules}}
+\subsubsection{\texorpdfstring{modify()}{modify()}}
+{\footnotesize\ttfamily void boidrules\+::modify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+wrap up the boids around the window of desktop 
+
+to force the values of physical parameters required for the boids and modify them accordingly to execute flocking \mbox{\Hypertarget{classboidrules_adeeb0bcb15cc3461fc521ce416d3266e}\label{classboidrules_adeeb0bcb15cc3461fc521ce416d3266e}} 
+\index{boidrules@{boidrules}!wrapup\+\_\+boids@{wrapup\+\_\+boids}}
+\index{wrapup\+\_\+boids@{wrapup\+\_\+boids}!boidrules@{boidrules}}
+\subsubsection{\texorpdfstring{wrapup\+\_\+boids()}{wrapup\_boids()}}
+{\footnotesize\ttfamily void boidrules\+::wrapup\+\_\+boids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Functions which are used further for three boid rules and dispaying the boids on pc. 
+
+two preserve the number of boids on the screen and creating a environment to move the flock by wrapping around the boundaries of screen 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+E\+:/\+Compu/\+Sem 4/\+Design Pracrices (\+C\+O\+P290)/\+Starling/starling project/boidrules.\+h\item 
+E\+:/\+Compu/\+Sem 4/\+Design Pracrices (\+C\+O\+P290)/\+Starling/starling project/boidrules.\+cpp\end{DoxyCompactItemize}

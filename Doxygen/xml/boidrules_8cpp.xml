@@ -1,0 +1,304 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="boidrules_8cpp" kind="file" language="C++">
+    <compoundname>boidrules.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="boidrules_8h" local="yes">boidrules.h</includes>
+    <includes local="yes">SFML/Graphics.hpp</includes>
+    <includes local="no">math.h</includes>
+    <includes local="no">vector</includes>
+    <incdepgraph>
+      <node id="7">
+        <label>SFML/Graphics.hpp</label>
+      </node>
+      <node id="5">
+        <label>stdlib.h</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+      <node id="2">
+        <label>boidrules.h</label>
+        <link refid="boidrules_8h_source"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>vectorfunc.h</label>
+        <link refid="vectorfunc_8h_source"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp</label>
+        <link refid="boidrules_8cpp"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>math.h</label>
+      </node>
+      <node id="1">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="boidrules_8cpp_1a1daf785e3f68d293c7caa1c756d5cb74" prot="public" static="no">
+        <name>pi</name>
+        <initializer>3.141592635</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" line="6" column="13" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="boidrules_8cpp_1a56dee7158d9de89b23535bf5ad318261" prot="public" static="no">
+        <name>h</name>
+        <initializer>height</initializer>
+        <briefdescription>
+<para>assigning short code name to height and width </para>        </briefdescription>
+        <detaileddescription>
+<para>width of desktop </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" line="14" column="9" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="boidrules_8cpp_1a6c6772207c061db8f6ca77c2661f497a" prot="public" static="no">
+        <name>w</name>
+        <initializer>width</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" line="15" column="9" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="boidrules_8cpp_1a96748845fc2c3523d799e28b47ed5351" prot="public" static="no" mutable="no">
+        <type>sf::VideoMode</type>
+        <definition>sf::VideoMode screen</definition>
+        <argsstring></argsstring>
+        <name>screen</name>
+        <initializer>= sf::VideoMode::getDesktopMode()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" line="10" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boidrules_8cpp_1ad13e9131f5062934438fa82334e4b2ee" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <initializer>= screen.height</initializer>
+        <briefdescription>
+<para>screen to be used as the features of desktop panel </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" line="11" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="boidrules_8cpp_1a837aabdd54757cb86d0f66387511753f" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <initializer>= screen.width</initializer>
+        <briefdescription>
+<para>height of desktop </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" line="12" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;boidrules.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;SFML/Graphics.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pi<sp/>3.141592635</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">sf::VideoMode<sp/>screen<sp/>=<sp/>sf::VideoMode::getDesktopMode();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height<sp/>=<sp/>screen.height;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>screen.width;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>h<sp/>height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>w<sp/>width</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><ref refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" kindref="member">boidrules::boidrules</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y){<sp/><sp/><sp/>location<sp/>=<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(x,y);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref><sp/>=<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(0,0);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref><sp/>=<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(rand()%3<sp/>-<sp/>2,<sp/>rand()%3<sp/>-<sp/>2);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref><sp/>=<sp/>4.75;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref><sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" kindref="member">boidrules::boidrules</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inspect_raptor){<sp/><ref refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" kindref="member">raptor</ref><sp/>=<sp/>inspect_raptor;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(inspect_raptor<sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">){<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref><sp/>=<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(rand()%3<sp/>-<sp/>1,<sp/>rand()%3<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref><sp/>=<sp/>4.75;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref><sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(inspect_raptor<sp/>==<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">){<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref><sp/>=<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(rand()%3<sp/>-<sp/>2,<sp/>rand()%3<sp/>-<sp/>2);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref><sp/>=<sp/>2.75;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref><sp/>=<sp/>0.5;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>location<sp/>=<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(x,y);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref><sp/>=<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref>(0,0);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="37"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1adeeb0bcb15cc3461fc521ce416d3266e" kindref="member">boidrules::wrapup_boids</ref>(){</highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(location.x<sp/>&lt;<sp/>0)<sp/><sp/>{location.x<sp/>=<sp/>location.x<sp/>+<sp/>w;</highlight><highlight class="comment">/*velocity<sp/>=vectorfunc(-(rand()%3<sp/>-<sp/>2),<sp/>-(rand()%3<sp/>-<sp/>2));*/</highlight><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(location.y<sp/>&lt;<sp/>0)<sp/><sp/><sp/><sp/>{location.y<sp/>=<sp/>location.y<sp/>+<sp/>h;</highlight><highlight class="comment">/*velocity<sp/>=vectorfunc(-(rand()%3<sp/>-<sp/>2),<sp/>-(rand()%3<sp/>-<sp/>2));*/</highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(location.x<sp/>&gt;<sp/>1800){location.x<sp/>=<sp/>location.x<sp/>-<sp/>w;</highlight><highlight class="comment">/*velocity<sp/>=vectorfunc((rand()%3<sp/>-<sp/>2),<sp/>(rand()%3<sp/>-<sp/>2));*/</highlight><highlight class="normal">}<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(location.y<sp/>&gt;<sp/>1000){location.y<sp/>=<sp/>location.y<sp/>-<sp/>h;</highlight><highlight class="comment">/*velocity<sp/>=vectorfunc((rand()%3<sp/>-<sp/>2),<sp/>(rand()%3<sp/>-<sp/>2));*/</highlight><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a6d350244d405926d30cd36e3f1faa85d" kindref="member">boidrules::modify</ref>(){<ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>.<ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(0.4);<sp/><ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>.vector_addition(<ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>.<ref refid="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" kindref="member">max_limit</ref>(<ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref>);location.vector_addition(<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>.<ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(0);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a8c50a648361809de6a75a94c76f0bea9" kindref="member">boidrules::boidvelocity_angle</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec){<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>theta<sp/>=<sp/>double(atan2(vec.x,<sp/>-<sp/>vec.y)<sp/>*<sp/>180<sp/>/<sp/>pi);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>theta;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a58d1b50a478847d0a295e298fa2d7b32" kindref="member">boidrules::applyrules_flock</ref>(vector&lt;boidrules&gt;<sp/>vec){<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>c<sp/>=<sp/><ref refid="classboidrules_1af85434ba6abc026215ac7e8d5ff586e4" kindref="member">Cohesion</ref>(vec);<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>s<sp/>=<sp/><ref refid="classboidrules_1a8d6420dcc0f0c98cd8fc8400947c54ed" kindref="member">Seperation</ref>(vec);<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>a<sp/>=<sp/><ref refid="classboidrules_1a923af948aad8d8679eddfcc461760e6e" kindref="member">Alignment</ref>(vec);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c.<ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(1);<sp/>s.<ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(1.5);<sp/>a.<ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(1);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" kindref="member">accelerate_boid</ref>(c);<sp/><ref refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" kindref="member">accelerate_boid</ref>(s);<sp/><ref refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" kindref="member">accelerate_boid</ref>(a);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="58"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a8184f1f98ababa77fd2976c58f9278a0" kindref="member">boidrules::execute_flocking</ref>(vector&lt;boidrules&gt;<sp/>vec){<ref refid="classboidrules_1a58d1b50a478847d0a295e298fa2d7b32" kindref="member">applyrules_flock</ref>(vec);<sp/><ref refid="classboidrules_1a6d350244d405926d30cd36e3f1faa85d" kindref="member">modify</ref>();<sp/><ref refid="classboidrules_1adeeb0bcb15cc3461fc521ce416d3266e" kindref="member">wrapup_boids</ref>();}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1af85434ba6abc026215ac7e8d5ff586e4" kindref="member">boidrules::Cohesion</ref>(vector&lt;boidrules&gt;<sp/>boids)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>distance_of_neighbours<sp/>=<sp/>50;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>goal(0,0);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>neighbour_size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;i&lt;boids.size();i++){</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>location.<ref refid="classvectorfunc_1a0d773a2e884277629e55d5e3deb94106" kindref="member">distance_betn_vec</ref>(boids[i].location);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">((dist<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(dist<sp/>&lt;<sp/>distance_of_neighbours)){goal.vector_addition(boids[i].location);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>neighbour_size++;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(neighbour_size<sp/>&gt;<sp/>0){goal.scalar_division(neighbour_size);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a9a72560c1d316a5e2191fd2a1d258499" kindref="member">steer</ref>(goal);}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>gola(0,0);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gola;}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a8d6420dcc0f0c98cd8fc8400947c54ed" kindref="member">boidrules::Seperation</ref>(vector&lt;boidrules&gt;<sp/>boids)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>req_seperation<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>goal(0,0);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>boids.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>location.distance_betn_vec(boids[i].location);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dist<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(dist<sp/>&lt;<sp/>req_seperation))<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>diff(0,0);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diff<sp/>=<sp/>diff.two_vec_sub(location,<sp/>boids[i].location);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diff.normalize_vec();</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>diff.scalar_division(dist);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.vector_addition(diff);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dist<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(dist<sp/>&lt;<sp/>req_seperation)<sp/>&amp;&amp;<sp/>boids[i].<ref refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" kindref="member">raptor</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/><ref refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" kindref="member">raptor</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>raptorVSraptor(0,0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raptorVSraptor<sp/>=<sp/>raptorVSraptor.two_vec_sub(location,<sp/>boids[i].location);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raptorVSraptor.normalize_vec();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>raptorVSraptor.scalar_division(dist);<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.vector_addition(raptorVSraptor);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dist<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(dist<sp/>&lt;<sp/>req_seperation<sp/>+<sp/>70)<sp/>&amp;&amp;<sp/>boids[i].<ref refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" kindref="member">raptor</ref><sp/>==<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>rapt(0,0);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rapt<sp/>=<sp/>rapt.two_vec_sub(location,<sp/>boids[i].location);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>rapt.scalar_multiplication(900);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.vector_addition(rapt);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count<sp/>&gt;<sp/>0){goal.scalar_division((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)count);}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(goal.magnitude()<sp/>&gt;<sp/>0){goal.normalize_vec();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.scalar_multiplication(<ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref>);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.vector_sub(<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.max_limit(<ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>goal;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a923af948aad8d8679eddfcc461760e6e" kindref="member">boidrules::Alignment</ref>(vector&lt;boidrules&gt;<sp/>boids)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>distance_of_neighbours<sp/>=<sp/>50;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>velosum(0,0);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>boids.size();<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dist<sp/>=<sp/>location.distance_betn_vec(boids[i].location);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((dist<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(dist<sp/>&lt;<sp/>distance_of_neighbours))<sp/>{<sp/></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velosum.vector_addition(boids[i].<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(count<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velosum.scalar_division((</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)count);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velosum.normalize_vec();</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>velosum.scalar_multiplication(<ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>goal;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal<sp/>=<sp/>goal.<ref refid="classvectorfunc_1a955371edddd4e7798c3bdd041de7fe80" kindref="member">two_vec_sub</ref>(velosum,<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>goal.<ref refid="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" kindref="member">max_limit</ref>(<ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>goal;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>gola(0,0);<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>gola;}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a9a72560c1d316a5e2191fd2a1d258499" kindref="member">boidrules::steer</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>req;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>req.<ref refid="classvectorfunc_1a1d296f0222889c61e1117e94674d90ec" kindref="member">vector_sub</ref>(vec);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>req.<ref refid="classvectorfunc_1a19ef4028d6623c18366fdebd0ef37eac" kindref="member">normalize_vec</ref>();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>req.<ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(<ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref>);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>.<ref refid="classvectorfunc_1a955371edddd4e7798c3bdd041de7fe80" kindref="member">two_vec_sub</ref>(req,<ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>.<ref refid="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" kindref="member">max_limit</ref>(<ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref>);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" kindref="member">boidrules::accelerate_boid</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>force){<ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>.vector_addition(force);}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp"/>
+  </compounddef>
+</doxygen>

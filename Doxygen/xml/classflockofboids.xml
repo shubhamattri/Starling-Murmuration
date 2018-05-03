@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classflockofboids" kind="class" language="C++" prot="public">
+    <compoundname>flockofboids</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classflockofboids_1a09095e4a651471b7b127a5e151c2a209" prot="public" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classboidrules" kindref="compound">boidrules</ref> &gt;</type>
+        <definition>vector&lt;boidrules&gt; flockofboids::fob</definition>
+        <argsstring></argsstring>
+        <name>fob</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="11" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classflockofboids_1afd6708805d7ac82fcbb1b1d6cdbeed42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>flockofboids::flockofboids</definition>
+        <argsstring>()</argsstring>
+        <name>flockofboids</name>
+        <briefdescription>
+<para>Constructors of flockofboids. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="13" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classflockofboids_1a18d0e6225637faad0a72e4a104cf5772" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classboidrules" kindref="compound">boidrules</ref></type>
+        <definition>boidrules flockofboids::boid_in_flock</definition>
+        <argsstring>(int bif)</argsstring>
+        <name>boid_in_flock</name>
+        <param>
+          <type>int</type>
+          <declname>bif</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="15" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.cpp" bodystart="5" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classflockofboids_1af360950e8d143fcec524ff8efda4f5ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flockofboids::adjoin_boid</definition>
+        <argsstring>(boidrules b)</argsstring>
+        <name>adjoin_boid</name>
+        <param>
+          <type><ref refid="classboidrules" kindref="compound">boidrules</ref></type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+<para>returns the boid present in flock </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="16" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.cpp" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classflockofboids_1a1c96e1f0069452958ec58d311b1b6235" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void flockofboids::recursive_flocking</definition>
+        <argsstring>()</argsstring>
+        <name>recursive_flocking</name>
+        <briefdescription>
+<para>adds boid to the vector data structure of boids </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="18" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.cpp" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classflockofboids_1a3bc6c0b7701dedad45c7b33071f642dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int flockofboids::flocksize</definition>
+        <argsstring>()</argsstring>
+        <name>flocksize</name>
+        <briefdescription>
+<para>executes flocking on all the boids collection recursively </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="19" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" line="9" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h" bodystart="8" bodyend="21"/>
+    <listofallmembers>
+      <member refid="classflockofboids_1af360950e8d143fcec524ff8efda4f5ce" prot="public" virt="non-virtual"><scope>flockofboids</scope><name>adjoin_boid</name></member>
+      <member refid="classflockofboids_1a18d0e6225637faad0a72e4a104cf5772" prot="public" virt="non-virtual"><scope>flockofboids</scope><name>boid_in_flock</name></member>
+      <member refid="classflockofboids_1afd6708805d7ac82fcbb1b1d6cdbeed42" prot="public" virt="non-virtual"><scope>flockofboids</scope><name>flockofboids</name></member>
+      <member refid="classflockofboids_1a3bc6c0b7701dedad45c7b33071f642dd" prot="public" virt="non-virtual"><scope>flockofboids</scope><name>flocksize</name></member>
+      <member refid="classflockofboids_1a09095e4a651471b7b127a5e151c2a209" prot="public" virt="non-virtual"><scope>flockofboids</scope><name>fob</name></member>
+      <member refid="classflockofboids_1a1c96e1f0069452958ec58d311b1b6235" prot="public" virt="non-virtual"><scope>flockofboids</scope><name>recursive_flocking</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

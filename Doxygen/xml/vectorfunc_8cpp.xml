@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="vectorfunc_8cpp" kind="file" language="C++">
+    <compoundname>vectorfunc.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="vectorfunc_8h" local="yes">vectorfunc.h</includes>
+    <includes local="no">math.h</includes>
+    <incdepgraph>
+      <node id="75">
+        <label>vectorfunc.h</label>
+        <link refid="vectorfunc_8h_source"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>math.h</label>
+      </node>
+      <node id="74">
+        <label>iostream</label>
+      </node>
+      <node id="73">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp</label>
+        <link refid="vectorfunc_8cpp"/>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="vectorfunc_8cpp_1a1daf785e3f68d293c7caa1c756d5cb74" prot="public" static="no">
+        <name>pi</name>
+        <initializer>3.141592635</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" line="4" column="12" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include&quot;vectorfunc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pi<sp/>3.141592635</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" kindref="member">vectorfunc::set_xy</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b){x<sp/>=<sp/>a;<sp/>y<sp/>=<sp/>b;}</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a19ef4028d6623c18366fdebd0ef37eac" kindref="member">vectorfunc::normalize_vec</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vec_mag<sp/>=<sp/><ref refid="classvectorfunc_1ad57efcec7f489fdfff980fc12706d9c6" kindref="member">magnitude</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(vec_mag<sp/>&gt;<sp/>0){<ref refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" kindref="member">set_xy</ref>(x/vec_mag<sp/>,y/vec_mag);}<sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{<ref refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" kindref="member">set_xy</ref>(x,y);}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vectorfunc::set_magnitude(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale){<ref refid="classvectorfunc_1a19ef4028d6623c18366fdebd0ef37eac" kindref="member">normalize_vec</ref>();<sp/><ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">scalar_multiplication</ref>(scale);}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" kindref="member">vectorfunc::max_limit</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>M)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>val<sp/>=<sp/><ref refid="classvectorfunc_1ad57efcec7f489fdfff980fc12706d9c6" kindref="member">magnitude</ref>();</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(val<sp/>&gt;<sp/>M){<ref refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" kindref="member">set_xy</ref>(x/val,<sp/>y/val);}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classvectorfunc_1af1763065cd6216015d32c24b5a39b54d" kindref="member">vectorfunc::replicate_vec</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classvectorfunc_1af1763065cd6216015d32c24b5a39b54d" kindref="member">replicate_vec</ref>(vec.x,<sp/>vec.y);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1af1763065cd6216015d32c24b5a39b54d" kindref="member">replicate_vec</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vectorfunc::vector_addition(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec){x<sp/>=<sp/>x<sp/>+<sp/>vec.x<sp/>;<sp/>y<sp/>=<sp/>y<sp/>+<sp/>vec.y;<sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a51703c48203ca0a2ce528c48fa155194" kindref="member">vectorfunc::scalar_addition</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar){x<sp/>=<sp/>x<sp/>+<sp/>scalar;<sp/>y<sp/>=<sp/>y<sp/>+<sp/>scalar;<sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a1d296f0222889c61e1117e94674d90ec" kindref="member">vectorfunc::vector_sub</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec){x<sp/>=<sp/>x<sp/>-<sp/>vec.x;<sp/>y<sp/>=<sp/>y<sp/>-<sp/>vec.y;<sp/>}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a687fdc907ad8844d6703b881d2cc4c1b" kindref="member">vectorfunc::scalar_sub</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar){x<sp/>=<sp/>x<sp/>-<sp/>scalar;<sp/>y<sp/>=<sp/>y<sp/>-<sp/>scalar;}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classvectorfunc_1a955371edddd4e7798c3bdd041de7fe80" kindref="member">vectorfunc::two_vec_sub</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec,<sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec1)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>v;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>vec.x<sp/>=<sp/>vec.x-vec1.x;<sp/>vec.y<sp/>=<sp/>vec.y-vec1.y;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>v.<ref refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" kindref="member">set_xy</ref>(vec.x,vec.y);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>vectorfunc::vector_multiplication(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec){x<sp/>=<sp/>x*vec.x;<sp/>y<sp/>=<sp/>y*vec.y;<sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kindref="member">vectorfunc::scalar_multiplication</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar){x<sp/>=<sp/>x*scalar;<sp/>y<sp/>=<sp/>y*scalar;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1ac12a8e822c2044f8cf2ac77931ed021a" kindref="member">vectorfunc::vector_division</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec){x<sp/>=<sp/>x/vec.x;<sp/>y<sp/>=<sp/>y/vec.y;<sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a0749647215d28b80ac293715d7841cc7" kindref="member">vectorfunc::scalar_division</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scalar){x<sp/>=<sp/>x/scalar;<sp/>y<sp/>=<sp/>y/scalar;<sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1ad57efcec7f489fdfff980fc12706d9c6" kindref="member">vectorfunc::magnitude</ref>(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(x*x<sp/>+<sp/>y*y);}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a0d773a2e884277629e55d5e3deb94106" kindref="member">vectorfunc::distance_betn_vec</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x_sub,y_sub<sp/>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>x_sub<sp/>=<sp/>x-vec.x;<sp/>y_sub<sp/>=<sp/>y-vec.y;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(x_sub*x_sub<sp/>+<sp/>y_sub*y_sub);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1af8fa2f110160aad200e5ff6009a46c9e" kindref="member">vectorfunc::dot_prod</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dp<sp/>=<sp/>x*vec.x<sp/>+<sp/>y*vec.y;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>dp;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1a0ea33bae1a0f2cc319cbfd26460e35d4" kindref="member">vectorfunc::angle_betn_vec</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>y<sp/>==<sp/>0)<sp/>||<sp/>(vec.x<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>vec.y<sp/>==<sp/>0)<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>prod_vec_mag<sp/>=<sp/>(sqrt(x*x<sp/>+<sp/>y*y)<sp/>*<sp/>sqrt(vec.x*vec.x<sp/>+<sp/>vec.y*vec.y));</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classvectorfunc_1af8fa2f110160aad200e5ff6009a46c9e" kindref="member">dot_prod</ref><sp/>=<sp/>x*vec.x<sp/>+<sp/>y*vec.y;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p<sp/>=<sp/><ref refid="classvectorfunc_1af8fa2f110160aad200e5ff6009a46c9e" kindref="member">dot_prod</ref>/prod_vec_mag<sp/>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p&lt;=-1){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pi;}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(p&gt;=1){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cos_inv_p<sp/>=<sp/>acos(p);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>cos_inv_p;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="boidrules_8h" kind="file" language="C++">
+    <compoundname>boidrules.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="vectorfunc_8h" local="yes">vectorfunc.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="boidrules_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.cpp</includedby>
+    <includedby refid="flockofboids_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.cpp</includedby>
+    <includedby refid="flockofboids_8h" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h</includedby>
+    <includedby refid="_simulation_8h" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h</includedby>
+    <includedby refid="_simulation_8cpp" local="yes">E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.cpp</includedby>
+    <incdepgraph>
+      <node id="13">
+        <label>stdlib.h</label>
+      </node>
+      <node id="14">
+        <label>vector</label>
+      </node>
+      <node id="9">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h</label>
+        <link refid="boidrules_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>vectorfunc.h</label>
+        <link refid="vectorfunc_8h_source"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>math.h</label>
+      </node>
+      <node id="10">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="16">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/flockofboids.h</label>
+        <link refid="flockofboids_8h_source"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h</label>
+        <link refid="boidrules_8h"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/Simulation.h</label>
+        <link refid="_simulation_8h_source"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classboidrules" prot="public">boidrules</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;vectorfunc.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BOIDRULES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BOIDRULES_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classboidrules" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classboidrules" kindref="compound">boidrules</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>location;</highlight></codeline>
+<codeline lineno="14" refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kindref="member">acceleration</ref>;</highlight></codeline>
+<codeline lineno="15" refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kindref="member">velocity</ref>;</highlight></codeline>
+<codeline lineno="16" refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kindref="member">speed_limit</ref>;</highlight></codeline>
+<codeline lineno="17" refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kindref="member">force_limit</ref>;</highlight></codeline>
+<codeline lineno="18" refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" kindref="member">raptor</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" kindref="member">boidrules</ref>(){}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" kindref="member">boidrules</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" kindref="member">boidrules</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x,</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>inspect_raptor);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1adeeb0bcb15cc3461fc521ce416d3266e" kindref="member">wrapup_boids</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a6d350244d405926d30cd36e3f1faa85d" kindref="member">modify</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a8c50a648361809de6a75a94c76f0bea9" kindref="member">boidvelocity_angle</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a58d1b50a478847d0a295e298fa2d7b32" kindref="member">applyrules_flock</ref>(vector&lt;boidrules&gt;<sp/>vec);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a8184f1f98ababa77fd2976c58f9278a0" kindref="member">execute_flocking</ref>(vector&lt;boidrules&gt;<sp/>vec);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1af85434ba6abc026215ac7e8d5ff586e4" kindref="member">Cohesion</ref>(vector&lt;boidrules&gt;<sp/>boids);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a8d6420dcc0f0c98cd8fc8400947c54ed" kindref="member">Seperation</ref>(vector&lt;boidrules&gt;<sp/>boids);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a923af948aad8d8679eddfcc461760e6e" kindref="member">Alignment</ref>(vector&lt;boidrules&gt;<sp/>boids);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/><ref refid="classboidrules_1a9a72560c1d316a5e2191fd2a1d258499" kindref="member">steer</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" kindref="member">accelerate_boid</ref>(<ref refid="classvectorfunc" kindref="compound">vectorfunc</ref><sp/>force);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/boidrules.h"/>
+  </compounddef>
+</doxygen>

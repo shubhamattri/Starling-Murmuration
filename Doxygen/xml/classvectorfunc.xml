@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="classvectorfunc" kind="class" language="C++" prot="public">
+    <compoundname>vectorfunc</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classvectorfunc_1a1903d875fdafb80b8a518c0afadf85a3" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double vectorfunc::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="11" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classvectorfunc_1a70ceaa93e103ec31b5104a859daa2266" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double vectorfunc::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="12" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classvectorfunc_1a796cc09e267289f8dcf555d8a35c9264" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>vectorfunc::vectorfunc</definition>
+        <argsstring>()</argsstring>
+        <name>vectorfunc</name>
+        <briefdescription>
+<para>constructors of vector functions </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="15" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" bodystart="15" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1aec15f6d5498b17fb987ffb420d3c731f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>vectorfunc::vectorfunc</definition>
+        <argsstring>(double a, double b)</argsstring>
+        <name>vectorfunc</name>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="16" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::set_xy</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>set_xy</name>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+<para>functions of <ref refid="vectorfunc_8h_source" kindref="compound">vectorfunc.h</ref> </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="22" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a19ef4028d6623c18366fdebd0ef37eac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::normalize_vec</definition>
+        <argsstring>()</argsstring>
+        <name>normalize_vec</name>
+        <briefdescription>
+<para>sets new value of x and y co-ordinates </para>        </briefdescription>
+        <detaileddescription>
+<para>set values of x and y after normalizing it vector&apos;s magnitude </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="23" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="10" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a03359cc0387f9125ab041b9a99407f7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::set_magnitude</definition>
+        <argsstring>(double mag)</argsstring>
+        <name>set_magnitude</name>
+        <param>
+          <type>double</type>
+          <declname>mag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="24" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::max_limit</definition>
+        <argsstring>(double M)</argsstring>
+        <name>max_limit</name>
+        <param>
+          <type>double</type>
+          <declname>M</declname>
+        </param>
+        <briefdescription>
+<para>sets magnitude of vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="26" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="18" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1af1763065cd6216015d32c24b5a39b54d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc vectorfunc::replicate_vec</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>replicate_vec</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>makes a copy of a vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="27" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a60a58f9f69b9405170ba0c7aeae02218" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::vector_addition</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>vector_addition</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="30" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a51703c48203ca0a2ce528c48fa155194" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::scalar_addition</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>scalar_addition</name>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>adds vector&apos;s x and y to given x and y </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="31" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a1d296f0222889c61e1117e94674d90ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::vector_sub</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>vector_sub</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>adds scalar to vector&apos;s x and y </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="32" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a687fdc907ad8844d6703b881d2cc4c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::scalar_sub</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>scalar_sub</name>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>subtracts vector&apos;s x and y from given x and y </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="33" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a955371edddd4e7798c3bdd041de7fe80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+        <definition>vectorfunc vectorfunc::two_vec_sub</definition>
+        <argsstring>(vectorfunc vec, vectorfunc vec1)</argsstring>
+        <name>two_vec_sub</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec1</declname>
+        </param>
+        <briefdescription>
+<para>subtracts vector&apos;s x and y from scalar </para>        </briefdescription>
+        <detaileddescription>
+<para>subtracts two input vectors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="34" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a907a985920a17de29945192e16cd49c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::vector_multiplication</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>vector_multiplication</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="35" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="43" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a326234c6552cda2a79b191c867358c29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::scalar_multiplication</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>scalar_multiplication</name>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>multiplies vector to given vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="36" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1ac12a8e822c2044f8cf2ac77931ed021a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::vector_division</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>vector_division</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>adds vector by scalar </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="37" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a0749647215d28b80ac293715d7841cc7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void vectorfunc::scalar_division</definition>
+        <argsstring>(double scalar)</argsstring>
+        <name>scalar_division</name>
+        <param>
+          <type>double</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+<para>divides vector by given vector </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="38" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1ad57efcec7f489fdfff980fc12706d9c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vectorfunc::magnitude</definition>
+        <argsstring>()</argsstring>
+        <name>magnitude</name>
+        <briefdescription>
+<para>calculation returning functions </para>        </briefdescription>
+        <detaileddescription>
+<para>divides vector by scalar </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="41" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a0d773a2e884277629e55d5e3deb94106" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vectorfunc::distance_betn_vec</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>distance_betn_vec</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>calculates magnitude of a vector </para>        </briefdescription>
+        <detaileddescription>
+<para>calculates distance between two vectors </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="42" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1af8fa2f110160aad200e5ff6009a46c9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vectorfunc::dot_prod</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>dot_prod</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>takes dot product of two vectors and returns it </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="43" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="57" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classvectorfunc_1a0ea33bae1a0f2cc319cbfd26460e35d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double vectorfunc::angle_betn_vec</definition>
+        <argsstring>(vectorfunc vec)</argsstring>
+        <name>angle_betn_vec</name>
+        <param>
+          <type><ref refid="classvectorfunc" kindref="compound">vectorfunc</ref></type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>returns angle between two vectors </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>using dot product concept to calculate angle between two vectors </para>        </inbodydescription>
+        <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="44" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.cpp" bodystart="63" bodyend="73"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" line="9" column="1" bodyfile="E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project/vectorfunc.h" bodystart="9" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classvectorfunc_1a0ea33bae1a0f2cc319cbfd26460e35d4" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>angle_betn_vec</name></member>
+      <member refid="classvectorfunc_1a0d773a2e884277629e55d5e3deb94106" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>distance_betn_vec</name></member>
+      <member refid="classvectorfunc_1af8fa2f110160aad200e5ff6009a46c9e" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>dot_prod</name></member>
+      <member refid="classvectorfunc_1ad57efcec7f489fdfff980fc12706d9c6" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>magnitude</name></member>
+      <member refid="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>max_limit</name></member>
+      <member refid="classvectorfunc_1a19ef4028d6623c18366fdebd0ef37eac" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>normalize_vec</name></member>
+      <member refid="classvectorfunc_1af1763065cd6216015d32c24b5a39b54d" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>replicate_vec</name></member>
+      <member refid="classvectorfunc_1a51703c48203ca0a2ce528c48fa155194" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>scalar_addition</name></member>
+      <member refid="classvectorfunc_1a0749647215d28b80ac293715d7841cc7" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>scalar_division</name></member>
+      <member refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>scalar_multiplication</name></member>
+      <member refid="classvectorfunc_1a687fdc907ad8844d6703b881d2cc4c1b" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>scalar_sub</name></member>
+      <member refid="classvectorfunc_1a03359cc0387f9125ab041b9a99407f7c" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>set_magnitude</name></member>
+      <member refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>set_xy</name></member>
+      <member refid="classvectorfunc_1a955371edddd4e7798c3bdd041de7fe80" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>two_vec_sub</name></member>
+      <member refid="classvectorfunc_1a60a58f9f69b9405170ba0c7aeae02218" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>vector_addition</name></member>
+      <member refid="classvectorfunc_1ac12a8e822c2044f8cf2ac77931ed021a" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>vector_division</name></member>
+      <member refid="classvectorfunc_1a907a985920a17de29945192e16cd49c9" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>vector_multiplication</name></member>
+      <member refid="classvectorfunc_1a1d296f0222889c61e1117e94674d90ec" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>vector_sub</name></member>
+      <member refid="classvectorfunc_1a796cc09e267289f8dcf555d8a35c9264" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>vectorfunc</name></member>
+      <member refid="classvectorfunc_1aec15f6d5498b17fb987ffb420d3c731f" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>vectorfunc</name></member>
+      <member refid="classvectorfunc_1a1903d875fdafb80b8a518c0afadf85a3" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>x</name></member>
+      <member refid="classvectorfunc_1a70ceaa93e103ec31b5104a859daa2266" prot="public" virt="non-virtual"><scope>vectorfunc</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

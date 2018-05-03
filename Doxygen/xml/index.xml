@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="classboidrules" kind="class"><name>boidrules</name>
+    <member refid="classboidrules_1a0e9029abd27e4e202498f270819f6878" kind="variable"><name>location</name></member>
+    <member refid="classboidrules_1a23a05347f2694e15bd07165a60c1407d" kind="variable"><name>acceleration</name></member>
+    <member refid="classboidrules_1a32bf5e76cc15e8c16c6a4b25aec532aa" kind="variable"><name>velocity</name></member>
+    <member refid="classboidrules_1a1fb1fcf0028472dbbfc1fc0201be0f50" kind="variable"><name>speed_limit</name></member>
+    <member refid="classboidrules_1ae7ec6073d339c52d9cea8fec2bada84a" kind="variable"><name>force_limit</name></member>
+    <member refid="classboidrules_1ac8378b6011030e090f2678a2422d3174" kind="variable"><name>raptor</name></member>
+    <member refid="classboidrules_1a0fa44ded12febb8a903073fad1205e5b" kind="function"><name>boidrules</name></member>
+    <member refid="classboidrules_1a3fc6820f3caaf98bfec67c496785ef7d" kind="function"><name>boidrules</name></member>
+    <member refid="classboidrules_1ae1c37124f0905e6ae29868a624bcf54b" kind="function"><name>boidrules</name></member>
+    <member refid="classboidrules_1adeeb0bcb15cc3461fc521ce416d3266e" kind="function"><name>wrapup_boids</name></member>
+    <member refid="classboidrules_1a6d350244d405926d30cd36e3f1faa85d" kind="function"><name>modify</name></member>
+    <member refid="classboidrules_1a8c50a648361809de6a75a94c76f0bea9" kind="function"><name>boidvelocity_angle</name></member>
+    <member refid="classboidrules_1a58d1b50a478847d0a295e298fa2d7b32" kind="function"><name>applyrules_flock</name></member>
+    <member refid="classboidrules_1a8184f1f98ababa77fd2976c58f9278a0" kind="function"><name>execute_flocking</name></member>
+    <member refid="classboidrules_1af85434ba6abc026215ac7e8d5ff586e4" kind="function"><name>Cohesion</name></member>
+    <member refid="classboidrules_1a8d6420dcc0f0c98cd8fc8400947c54ed" kind="function"><name>Seperation</name></member>
+    <member refid="classboidrules_1a923af948aad8d8679eddfcc461760e6e" kind="function"><name>Alignment</name></member>
+    <member refid="classboidrules_1a9a72560c1d316a5e2191fd2a1d258499" kind="function"><name>steer</name></member>
+    <member refid="classboidrules_1a638a0fb28463f690dfc1e634ec1d8b01" kind="function"><name>accelerate_boid</name></member>
+  </compound>
+  <compound refid="classflockofboids" kind="class"><name>flockofboids</name>
+    <member refid="classflockofboids_1a09095e4a651471b7b127a5e151c2a209" kind="variable"><name>fob</name></member>
+    <member refid="classflockofboids_1afd6708805d7ac82fcbb1b1d6cdbeed42" kind="function"><name>flockofboids</name></member>
+    <member refid="classflockofboids_1a18d0e6225637faad0a72e4a104cf5772" kind="function"><name>boid_in_flock</name></member>
+    <member refid="classflockofboids_1af360950e8d143fcec524ff8efda4f5ce" kind="function"><name>adjoin_boid</name></member>
+    <member refid="classflockofboids_1a1c96e1f0069452958ec58d311b1b6235" kind="function"><name>recursive_flocking</name></member>
+    <member refid="classflockofboids_1a3bc6c0b7701dedad45c7b33071f642dd" kind="function"><name>flocksize</name></member>
+  </compound>
+  <compound refid="class_simulation" kind="class"><name>Simulation</name>
+    <member refid="class_simulation_1a10b33ceb8cb372ab6a1a6d9a11414e58" kind="variable"><name>window</name></member>
+    <member refid="class_simulation_1a065ff83a28556bdb53e7bd372d5fbc71" kind="variable"><name>window_width</name></member>
+    <member refid="class_simulation_1a6d070746d01f47174f1625aebaf788c6" kind="variable"><name>window_height</name></member>
+    <member refid="class_simulation_1a2c6e0e54f28cd36692d76d688bd1b3e1" kind="variable"><name>pTexture</name></member>
+    <member refid="class_simulation_1a9ca5b7df8749de73d2eb316730c8a54e" kind="variable"><name>pImage</name></member>
+    <member refid="class_simulation_1a12e78ed2ee20c7b0f9036b9ee8df4f72" kind="variable"><name>flock</name></member>
+    <member refid="class_simulation_1a6a1f37cdde22e73ae4844dd0e4b11e71" kind="variable"><name>sizeofboids</name></member>
+    <member refid="class_simulation_1a5ce9957514c0d42b9d528eb317f8fc34" kind="variable"><name>shapes</name></member>
+    <member refid="class_simulation_1afa02d69e0c0390ad10bdfadae6d8c1e3" kind="function"><name>Render</name></member>
+    <member refid="class_simulation_1ad46a8fa548af6ec0193a31efab973e78" kind="function"><name>ManageInput</name></member>
+    <member refid="class_simulation_1a5b224cc5b36bcc8eb29689aff223de41" kind="function"><name>Simulation</name></member>
+    <member refid="class_simulation_1af0ad94212fd0a5af2f3f0b3a9be1b3a7" kind="function"><name>Run</name></member>
+  </compound>
+  <compound refid="classvectorfunc" kind="class"><name>vectorfunc</name>
+    <member refid="classvectorfunc_1a1903d875fdafb80b8a518c0afadf85a3" kind="variable"><name>x</name></member>
+    <member refid="classvectorfunc_1a70ceaa93e103ec31b5104a859daa2266" kind="variable"><name>y</name></member>
+    <member refid="classvectorfunc_1a796cc09e267289f8dcf555d8a35c9264" kind="function"><name>vectorfunc</name></member>
+    <member refid="classvectorfunc_1aec15f6d5498b17fb987ffb420d3c731f" kind="function"><name>vectorfunc</name></member>
+    <member refid="classvectorfunc_1a821fae9fc69b83e5b6ba044688f26ebe" kind="function"><name>set_xy</name></member>
+    <member refid="classvectorfunc_1a19ef4028d6623c18366fdebd0ef37eac" kind="function"><name>normalize_vec</name></member>
+    <member refid="classvectorfunc_1a03359cc0387f9125ab041b9a99407f7c" kind="function"><name>set_magnitude</name></member>
+    <member refid="classvectorfunc_1aaabdc9d587f11992f78fff088d471162" kind="function"><name>max_limit</name></member>
+    <member refid="classvectorfunc_1af1763065cd6216015d32c24b5a39b54d" kind="function"><name>replicate_vec</name></member>
+    <member refid="classvectorfunc_1a60a58f9f69b9405170ba0c7aeae02218" kind="function"><name>vector_addition</name></member>
+    <member refid="classvectorfunc_1a51703c48203ca0a2ce528c48fa155194" kind="function"><name>scalar_addition</name></member>
+    <member refid="classvectorfunc_1a1d296f0222889c61e1117e94674d90ec" kind="function"><name>vector_sub</name></member>
+    <member refid="classvectorfunc_1a687fdc907ad8844d6703b881d2cc4c1b" kind="function"><name>scalar_sub</name></member>
+    <member refid="classvectorfunc_1a955371edddd4e7798c3bdd041de7fe80" kind="function"><name>two_vec_sub</name></member>
+    <member refid="classvectorfunc_1a907a985920a17de29945192e16cd49c9" kind="function"><name>vector_multiplication</name></member>
+    <member refid="classvectorfunc_1a326234c6552cda2a79b191c867358c29" kind="function"><name>scalar_multiplication</name></member>
+    <member refid="classvectorfunc_1ac12a8e822c2044f8cf2ac77931ed021a" kind="function"><name>vector_division</name></member>
+    <member refid="classvectorfunc_1a0749647215d28b80ac293715d7841cc7" kind="function"><name>scalar_division</name></member>
+    <member refid="classvectorfunc_1ad57efcec7f489fdfff980fc12706d9c6" kind="function"><name>magnitude</name></member>
+    <member refid="classvectorfunc_1a0d773a2e884277629e55d5e3deb94106" kind="function"><name>distance_betn_vec</name></member>
+    <member refid="classvectorfunc_1af8fa2f110160aad200e5ff6009a46c9e" kind="function"><name>dot_prod</name></member>
+    <member refid="classvectorfunc_1a0ea33bae1a0f2cc319cbfd26460e35d4" kind="function"><name>angle_betn_vec</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="boidrules_8cpp" kind="file"><name>boidrules.cpp</name>
+    <member refid="boidrules_8cpp_1a1daf785e3f68d293c7caa1c756d5cb74" kind="define"><name>pi</name></member>
+    <member refid="boidrules_8cpp_1a56dee7158d9de89b23535bf5ad318261" kind="define"><name>h</name></member>
+    <member refid="boidrules_8cpp_1a6c6772207c061db8f6ca77c2661f497a" kind="define"><name>w</name></member>
+    <member refid="boidrules_8cpp_1a96748845fc2c3523d799e28b47ed5351" kind="variable"><name>screen</name></member>
+    <member refid="boidrules_8cpp_1ad13e9131f5062934438fa82334e4b2ee" kind="variable"><name>height</name></member>
+    <member refid="boidrules_8cpp_1a837aabdd54757cb86d0f66387511753f" kind="variable"><name>width</name></member>
+  </compound>
+  <compound refid="boidrules_8h" kind="file"><name>boidrules.h</name>
+  </compound>
+  <compound refid="flockofboids_8cpp" kind="file"><name>flockofboids.cpp</name>
+  </compound>
+  <compound refid="flockofboids_8h" kind="file"><name>flockofboids.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_simulation_8cpp" kind="file"><name>Simulation.cpp</name>
+  </compound>
+  <compound refid="_simulation_8h" kind="file"><name>Simulation.h</name>
+  </compound>
+  <compound refid="vectorfunc_8cpp" kind="file"><name>vectorfunc.cpp</name>
+    <member refid="vectorfunc_8cpp_1a1daf785e3f68d293c7caa1c756d5cb74" kind="define"><name>pi</name></member>
+  </compound>
+  <compound refid="vectorfunc_8h" kind="file"><name>vectorfunc.h</name>
+  </compound>
+  <compound refid="dir_4d9a63b1a78fb28252eb76a916ea093a" kind="dir"><name>E:/Compu/Sem 4/Design Pracrices (COP290)/Starling/starling project</name>
+  </compound>
+</doxygenindex>

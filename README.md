@@ -6,5 +6,5 @@ Model and simulate the Reynolds Boid formula. We will computationally simulate t
 Instruction to Run :
 
 1. Download sfml lib in Linux
-2. Run make to compile all src files
-3. Run the command "./simulate-starlin" to run the program
+2. Run "make" to compile all src files
+3. Run the command "./simulate-starling" to run the program
